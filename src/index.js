@@ -42,8 +42,8 @@ app.get("/statement/:cpf", (request, response) => {
 
     if(!customer){
         return response.status(400).json({error: "Customer Not Found!"})
-    }
-
+    };
+    
     return response.json(customer.statement);
 });
 
